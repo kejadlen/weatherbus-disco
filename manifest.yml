@@ -1,0 +1,7 @@
+---
+applications:
+- name: weatherbus-disco
+  memory: 512M
+  host: weatherbus-disco
+  path: ./build/libs/disco-0.0.1-SNAPSHOT.jar
+  buildpack: java_buildpack
