@@ -1,0 +1,14 @@
+---
+platform: linux
+image: "docker:///java#8"
+inputs:
+  - name: weatherbus-disco-source
+outputs:
+  - name: build
+    path: weatherbus-disco-source/artifacts
+run:
+  path: "weatherbus-disco-source/gradlew"
+  args: ["copyJar", "-pweatherbus-disco-source"]
+params:
+  "TERM": "xterm"
+
