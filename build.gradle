@@ -54,7 +54,7 @@ task wrapper(type: Wrapper) {
 	gradleVersion = '2.9'
 }
 
-task copyJar(type: Copy, dependsOn: build) {
+task copyJar(type: Copy, dependsOn: assemble) {
 	from jar
 	into "artifacts"
 }
